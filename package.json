@@ -1,0 +1,41 @@
+{
+  "name": "dart-idle-mcp",
+  "version": "0.1.0",
+  "description": "Local MCP server for the Dart/Flutter Idle packages, using idle_cli as the single execution surface.",
+  "private": false,
+  "license": "UNLICENSED",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "codex",
+    "cli",
+    "dart",
+    "flutter",
+    "idle",
+    "idle_cli",
+    "idle_core",
+    "idle_save",
+    "idle_flutter"
+  ],
+  "bin": {
+    "dart-idle-mcp": "bin/idle-mcp.js",
+    "idle-mcp": "bin/idle-mcp.js"
+  },
+  "files": [
+    "bin/",
+    "scripts/",
+    "src/",
+    "AGENTS.md",
+    "README.md",
+    ".gitignore"
+  ],
+  "scripts": {
+    "smoke:mcp": "node scripts/smoke-mcp.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
