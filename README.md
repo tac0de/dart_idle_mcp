@@ -16,7 +16,7 @@ Local MCP server for the **Dart/Flutter Idle packages** (`idle_core`, `idle_save
 ## Run (npx)
 
 ```bash
-npx -y dart-idle-mcp
+npx -y dart-idle-mcp@0.1.1
 ```
 
 ## Run (from this repo)
@@ -32,19 +32,19 @@ node bin/idle-mcp.js
 ```toml
 [mcp_servers.idle]
 command = "npx"
-args = ["-y", "dart-idle-mcp"]
+args = ["-y", "dart-idle-mcp@0.1.1"]
 ```
 
 ### Claude Desktop-style
 
-If your MCP client supports stdio servers, point it at `npx -y dart-idle-mcp`.
+If your MCP client supports stdio servers, point it at `npx -y dart-idle-mcp@0.1.1`.
 
 ```json
 {
   "mcpServers": {
     "idle": {
       "command": "npx",
-      "args": ["-y", "dart-idle-mcp"]
+      "args": ["-y", "dart-idle-mcp@0.1.1"]
     }
   }
 }
@@ -58,18 +58,6 @@ If your MCP client supports stdio servers, point it at `npx -y dart-idle-mcp`.
 ## Config
 
 - `IDLE_CLI_PATH`: override the `idle` executable path (defaults to `idle` on PATH)
-
-## Publish to npm
-
-- This repo is ready to publish as-is, but you may still want a scoped name to avoid collisions (e.g. `@your-scope/dart-idle-mcp`).
-- Before publishing, update `package.json#name` (and optionally add `repository`, `homepage`, `bugs`).
-- If you intend to publish publicly, set a real `license` in `package.json` (it is currently `UNLICENSED`).
-- Publish (requires network + npm auth):
-
-```bash
-npm login
-npm publish --access public
-```
 
 ## Troubleshooting
 
