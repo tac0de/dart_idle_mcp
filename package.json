@@ -1,9 +1,9 @@
 {
-  "name": "dart-idle-mcp",
-  "version": "0.1.1",
+  "name": "@tac0de/dart-idle-mcp",
+  "version": "0.1.2",
   "description": "Local MCP server for the Dart/Flutter Idle packages, using idle_cli as the single execution surface.",
   "private": false,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "keywords": [
     "mcp",
     "model-context-protocol",
